@@ -21,6 +21,6 @@ RUN mkdir -p /var/www/html
 RUN mkdir -p /var/nginx-streaming
 RUN mkdir -p /var/log/nginx
 RUN cp /home/nginx-rtmp-module/stat.xsl /var/nginx-streaming/
-ADD nginx/nginx.conf /usr/local/nginx-streaming/conf/nginx.conf
+ADD nginx/nginx.conf usr/local/nginx-streaming/conf/nginx.conf
 EXPOSE 80
 EXPOSE 1935
