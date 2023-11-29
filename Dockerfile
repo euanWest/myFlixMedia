@@ -19,7 +19,7 @@ RUN cd /home/nginx/nginx-1.4.3 && ./configure --add-module=/home/nginx-rtmp-modu
 RUN cd /home/nginx/nginx-1.4.3&& make && make install
 RUN mkdir -p /var/www/html
 RUN mkdir -p /var/nginx-streaming
-RUN mkdir - /var/log/nginx
+RUN mkdir -p /var/log/nginx
 RUN cp /home/nginx-rtmp-module/stat.xsl /var/nginx-streaming/
 ADD nginx/nginx.conf /usr/local/nginx-streaming/conf/nginx.conf
 EXPOSE 80
