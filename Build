@@ -1,4 +1,5 @@
 # Yoinked from: https://github.com/acobley/NginxVideo/blob/master/Dockerfile , 28/11/2023
+#!/bin/bash
 docker stop videoserv
 docker rm videoserv
 docker build -t video .
