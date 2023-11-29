@@ -2,7 +2,7 @@
 FROM ubuntu:14.04
 RUN apt-get -y -q update
 RUN apt-get install -y git
-RUN apt get install -y gcc
+RUN apt-get install -y gcc
 RUN apt-get install -y make
 RUN apt-get install -y libpcre3-dev
 RUN apt-get install -y libssl-dev
