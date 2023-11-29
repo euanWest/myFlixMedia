@@ -7,6 +7,10 @@ RUN apt-get install -y make
 RUN apt-get install -y libpcre3-dev
 RUN apt-get install -y libssl-dev
 RUN apt-get install -y wget
+RUN mkdir -p mp4
+RUN cd mp4
+RUN wget https://storage.cloud.google.com/2420987-myflix-videos/AtomAgeVampire.mp4
+RUN cd ..
 RUN mkdir -p /home/mginx-rtmp-module
 RUN git clone https://github.com/arut/nginx-rtmp-module /home/nginx-rtmp-module
 RUN mkdir - p /home/nginx
